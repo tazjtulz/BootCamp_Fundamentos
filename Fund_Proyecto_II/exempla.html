@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="shortcut icon" type="image/png" href="Favicon.png">
+    <title>BicArt | Exempla Artium</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <img src="Logo_SF.png" alt="logo" class="logo">
+            <div class="hamburger">
+                <label for="hamburger" class="contHamburgerMenu">
+                    <div class="picHambFlex"><img src="MenuIcon.png" alt="Icono desplegable" class="picMenu"></div><!-- debo agregar contenedor al ícono para poder desligarlo del flex -->
+                </label>
+                <input type="checkbox" id="hamburger" class="hamburgerCheck">
+                <ul class="contMenu">
+                    <li class="itemMenu"><a href="index.html" class="linkMenu">inicio</a></li>
+                    <li class="itemMenu"><a href="galeria.html" class="linkMenu">nuestra galería</a></li>
+                    <li class="itemMenu"><a href="exempla.html" class="linkMenu">exempla artium</a></li>
+                    <li class="itemMenu"><a href="contacto.html" class="linkMenu">contacto</a>
+                        <ul class="contSubMenu">
+                            <li class="itemMenu itemSubMenu"><a href="horarios.html" class="linkSubMenu">horarios & tarifas</a></li>
+                            <li class="itemMenu itemSubMenu"><a href="inscripciones.html" class="linkSubMenu">inscripciones</a></li>
+                            <li class="itemMenu itemSubMenu"><a href="ubicacion.html" class="linkSubMenu">cómo llegar</a></li>
+                            <!-- <li class="itemMenu itemSubMenu"><a href="formcontacto.html" class="linkSubMenu">contáctenos</a></li> CREO QUE ME SOBRA ESTE-->
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="sectionInicio"><!-- No la cambié porque es la misma configuración de la anterior -->
+            <h1 class="tittle">exempla artium</h1>
+            <br>
+            <p class="parrDestacado">En esta sección encontrarán las muestras artísticas (<i>exempla artium</i>) disponibles en la agenda del presente mes.</p><br>
+            <p class="parrDestacado">El uso de los vocablos de la lengua latína <b><i>exempla</i></b> y <b><i>artium</i></b>, pretenden evocar sentimientos de apropiación con el arte para nuestros visitantes; toda vez que las civilizaciones latinas erigieron el arte en niveles excelsos.</p><br>
+            <p class="parrDestacado">Te invitamos a que sigas nuestra agenda y participes en los eventos que hemos diseñado para continuar enriqueciendo nuestro conocimiento.</p><br>
+
+        <!-- <div class="exemplaTable">
+            <table class="agendaTable">
+                <tr>
+                    <th>Póster</th>
+                    <th>Evento</th>
+                    <th>Artista</th>
+                    <th>Agenda</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td><img class="imgExempla" src="Multimedia/Wp_Slider_2.jpg" alt="Arte Asiático"/></td>
+                    <td>Arte Asiático - Nankurunaisa [Vive hoy, pero espera el mañana]</td>
+                    <td>Gichin Funakoshi</td>
+                    <td>Todos los sábados del mes de mayo</td>
+                    <td><button type="submit"><a href="inscripciones.html" target="blank">Reservar</a></button></td>
+                </tr>
+
+                <tr>
+                    <td><img class="imgExempla" src="Multimedia/Wp_Slider_3.jpg" alt="Arte Wayúu"/></td>
+                    <td>Arte Tribal - Eejirawaa [Luchar]</td>
+                    <td>Tura Huaspuezan</td>
+                    <td>Todos los domingos del mes de mayo</td>
+                    <td><button type="submit"><a href="inscripciones.html" target="blank">Reservar</a></button></td>
+                </tr>
+
+                <tr>
+                    <td><img class="imgExempla" src="Multimedia/Poster_Spazuk.jpg" alt="Arte Fumage"/></td>
+                    <td>Fumage - Entre la realidad y la ironía</td>
+                    <td>Steven Spazuk</td>
+                    <td>Todos los días, desde el 1 de mayo hasta el 15 de junio</td>
+                    <td><button type="submit"><a href="inscripciones.html" target="blank">Reservar</a></button></td>
+                </tr>
+
+                <tr>
+                    <td><img class="imgExempla" src="Multimedia/Poster_AnGil.jpg" alt="Arte Clásico"/></td>
+                    <td>Arte Clásico - ¡Que vuele solo!</td>
+                    <td>Aníbal Gil</td>
+                    <td>Todos los días, desde el 1 de mayo hasta el 15 de junio</td>
+                    <td><button type="submit"><a href="inscripciones.html" target="blank">Reservar</a></button></td>
+                </tr>
+            </table>
+        </div> --> <!-- NO ME CUADRÓ LA TABLA EN RESPONSIVE Y SÍ QUEMÉ TIEMPO -->
+            
+        <div class="contExempla">
+            <div class= "imgExempla">
+                <img src="Multimedia/Wp_Slider_2.jpg" alt="Arte Asiático"/>
+            </div>
+            <div class="evento">
+                <h3>Arte Asiático - Nankurunaisa [Vive hoy, pero espera el mañana]</h3>
+            </div>
+            <div class="artista">
+                <p>Gichin Funakoshi</p>
+            </div>
+            <div class="agenda">
+                <p>Todos los sábados del mes de mayo</p>
+            </div>
+            <div class="reserva">
+                <button type="submit"><a href="inscripciones.html" target="blank">Reservar</a></button>
+            </div>
+        </div>
+
+        <div class="contExempla">
+            <div class= "imgExempla">
+                <img src="Multimedia/Wp_Slider_3.jpg" alt="Arte Wayúu"/>
+            </div>
+            <div class="evento">
+                <h3>Arte Tribal - Eejirawaa [Luchar]</h3>
+            </div>
+            <div class="artista">
+                <p>Tura Huaspuezan</p>
+            </div>
+            <div class="agenda">
+                <p>Todos los domingos del mes de mayo</p>
+            </div>
+            <div class="reserva">
+                <button type="submit"><a href="inscripciones.html" target="blank">Reservar</a></button>
+            </div>
+        </div>
+
+        <div class="contExempla">
+            <div class= "imgExempla">
+                <img src="Multimedia/Poster_Spazuk.jpg" alt="Arte Fumage"/>
+            </div>
+            <div class="evento">
+                <h3>Fumage - Entre la realidad y la ironía</h3>
+            </div>
+            <div class="artista">
+                <p>Steven Spazuk</p>
+            </div>
+            <div class="agenda">
+                <p>Todos los días, desde el 1 de mayo hasta el 15 de junio</p>
+            </div>
+            <div class="reserva">
+                <button type="submit"><a href="inscripciones.html" target="blank">Reservar</a></button>
+            </div>
+        </div>
+
+        <div class="contExempla">
+            <div class= "imgExempla">
+                <img src="Multimedia/Poster_AnGil.jpg" alt="Arte Clásico"/>
+            </div>
+            <div class="evento">
+                <h3>Arte Clásico - ¡Que vuele solo!</h3>
+            </div>
+            <div class="artista">
+                <p>Aníbal Gil</p>
+            </div>
+            <div class="agenda">
+                <p>Todos los días, desde el 1 de mayo hasta el 15 de junio</p>
+            </div>
+            <div class="reserva">
+                <button type="submit"><a href="inscripciones.html" target="blank">Reservar</a></button>
+            </div>
+        </div>
+        </section>
+        
+        
+    </main>
+
+    <footer class="footer" id="footer">
+        <div class="contFooter">
+            <img src="Logo_SF.png" alt="BicArt Logo" class="logoFooter"> 
+        </div>
+        <div class="contFooter contFooterText">
+            <p class="contactDesarrollador">© 2020 Diseñado por <b>July Tatiana Carranza Jiménez</b>.</p>
+            <p class="contactDesarrollador"><a href="#">Términos y Condiciones</a> || <a href="#">Políticas de Privacidad</a></p>
+            <p class="contactDesarrollador"><a href="mailto:tazjtulz@gmail.com">Envíanos tus comentarios</a> || <a href="tel:3506937804">Llámanos</a></p>
+            <p class="contactDesarrollador">Todos los derechos reservados</p>
+        </div> 
+        <div class="contFooter contFooterFollow">
+            <h3>Síguenos</h3>
+            <!-- Pongo links a mis redes sociales para comprobar funcionalidad -->
+            <div class="contFooterIco">
+                <div><a href="https://www.facebook.com/tazjtulz" target="blank">
+                    <img src="IcoFace.png" alt="Facebook" class="icoFooter"/></a></div>
+                <div><a href="https://www.instagram.com/tazjtulz/" target="blank">
+                    <img src="IcoInsta.png" alt="Instagram" class="icoFooter"/></a></div>
+                <div><a href="https://twitter.com/tazjtulz" target="blank">
+                    <img src="IcoTw.png" alt="Twitter" class="icoFooter"/></a></div>
+                <div><a href="https://www.youtube.com/user/tazjtulz" target="blank">
+                    <img src="IcoYt.png" alt="YouTube" class="icoFooter"/></a></div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

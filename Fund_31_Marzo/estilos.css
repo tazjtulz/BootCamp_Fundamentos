@@ -1,0 +1,68 @@
+/* aligni/justify content (más de una línea de ítems)
+aligni/justify items (una sola línea de ítems) */
+
+
+
+*{
+    margin: 0; /* [solo se verán las márgenes que se pongan a cada elemento] */
+    padding: 0; 
+    box-sizing: border-box; /* [Los elementos mantienen su tamaño original] */
+} /* formatea el documento: propiedades elementales al iniciar diseño */
+
+.cajaPadre{
+    background-color: coral;
+    width: 500px;
+    height: 500px;
+    margin: auto; /* (centra horizontalmente en la pantalla) */
+    /* padding-top: 50px; */ /* (separación del borde de arriba) */
+    /* (las instrucciones se dan desde el contenedor principal... Separa desde su borde superior el elemento siguiente) */
+    margin-top: 50px;
+    display: flex; /* (convierte en un flexbox) */
+    /* flex-direction: column; */
+    flex-direction: row; /* (dirección horizontal - eje x) */
+    /* Las características se aplian a los hijos directos, no a las ramas adicionales */
+    justify-content: center; /* (de acuerdo a la dirección elegida (row o column) alinea los elementos) */
+    align-items: center; /* (ibid. alinea vertical si direction està en column y visceversa) */
+    /* justify-content: space-around; */
+    flex-wrap: wrap; /* (obliga a los hijos a respetar en lo posible las medidas adjudicadas - esto cuando se sale de la caja las medidas) */
+}
+
+.cajaHijo{
+    width: 100px;
+    height: 100px;
+   /*  border: 1px solid black; */
+    /* margin-left: 50px; */
+    display: flex; /* (por defecto la direction es row) */
+    align-items: center;
+    justify-content: center;
+}
+
+.caja1{
+    background-color: brown;
+    order: 1; /* (orden de cada caja, esto en caso de necesitar un ordenamiento diferente) */
+}
+
+.caja2{
+    background-color: rgb(240, 207,62);
+    order: 4;
+}
+
+.caja3{
+    background-color: rgb(161, 252, 125);
+    order: 3;
+}
+
+.caja4{
+    background-color: rgb(121, 121, 255);
+    order: 2;
+}
+
+.txtCaja{
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    /* color: black; */
+    /* text-align: center; */
+}
+
+/* Flexbox maneja el "eje x" y el "eje y" */
+

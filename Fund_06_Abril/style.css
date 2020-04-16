@@ -1,0 +1,100 @@
+/* CONTENIDO MULTIMEDIA */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    display: flex;
+    justify-content: space-around;
+    background-color: aquamarine;
+}
+
+audio{
+    width: 100px;
+    position: fixed;
+    top: 50px;
+    right: 0;
+}
+
+.video{
+    display: flex;
+}
+
+.contVideo{
+    display: block;
+    margin: auto;
+    justify-content: space-around;
+}
+
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: antiquewhite;
+    padding: 50px;
+}
+
+.colsFooter{
+    width: 31%;
+}
+
+.logo{
+    width: 50%;
+    display: block;/* (para que reciba propiedades de margin... Originalmente es tipo línea) */
+    margin: auto;
+}
+
+iframe{
+    display: block;
+    margin: auto;
+}
+
+.colsFooterContacto{
+    display: flex;
+/*     justify-content: center; */ /* Ya no nos sirve porque lo pasamos a column */
+    flex-direction: column;
+    align-items: center;    
+}
+
+.colsFooterContacto li{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;/*  (espacio entre el contenido del contacto / 'teléfono y mail') */
+}
+
+.colsFooterContacto h4{
+    margin-bottom: 30px;/* Espacio entre el título y el contenido // Contacto vs teléfono y mail */
+}
+
+.colsFooterContacto a{
+    text-decoration: none;
+}
+
+
+@media screen and (max-width:768px){
+    iframe{
+     /*    display: block; */
+        width: 200px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .footer{
+        flex-direction: column;
+    }
+
+    .colsFooter{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    iframe{
+        width: 100%;
+    }
+}

@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+} 
+
+.contenedorList{
+    background-color: brown;
+    width: 100%;
+    height: 100px;
+    margin: auto; /* (centra horizontalmente en la pantalla) */
+    /* padding-top: 50px; */ /* (separación del borde de arriba) */
+    /* (las instrucciones se dan desde el contenedor principal... Separa desde su borde superior el elemento siguiente) */
+    margin-top: 50px;
+    display: flex; /* (convierte en un flexbox) */
+    /* flex-direction: column; */
+    flex-direction: row; /* (dirección horizontal - eje x) */
+    /* Las características se aplian a los hijos directos, no a las ramas adicionales */
+    justify-content: space-around; /* (de acuerdo a la dirección elegida (row o column) alinea los elementos) */
+    align-items: center; /* (ibid. alinea vertical si direction està en column y visceversa) */
+    /* justify-content: space-around; */
+    flex-wrap: wrap; /* (obliga a los hijos a respetar en lo posible las medidas adjudicadas - esto cuando se sale de la caja las medidas) */
+}
+
+.menuHijo{
+    width: 200px;
+    height: 50px;
+   /*  border: 1px solid black; */
+    /* margin-left: 50px; */
+    display: flex; /* (por defecto la direction es row) */
+    align-items: center;
+    justify-content: center;
+    list-style: none
+}
+
+.itemMenu1{
+    background-color: burlywood;
+}
+
+.itemMenu2{
+    background-color: rgb(240, 207,62);
+}
+
+.itemMenu3{
+    background-color: rgb(161, 252, 125);
+}
+
+.itemMenu4{
+    background-color: rgb(121, 121, 255);
+}
+
+.itemMenu5{
+    background-color: rgb(255, 121, 255);
+}
+
+
+li{
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    /* color: black; */
+    /* text-align: center; */
+}
+
+.linkMenu{
+    text-decoration: none;
+    text-align: center;
+    text-transform: capitalize; /* (convierte a mayúscula) */
+}

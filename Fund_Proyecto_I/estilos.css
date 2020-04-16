@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* (el contenido no se expande sino que se empuja hacia adentro) */
+}
+
+body{
+    font-family: 'Lora', tahoma;
+    background-color: #fffdef;
+    /* Agregar imagen de fondo */
+    background-image: url(mjbackground.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+/* INICIO DEL MENÚ */
+.header{
+    background-color: rgb(180, 139, 49);
+    width: 100%;
+    height: 15%; /* (Alto del encabezado) */
+    position: fixed; /* (inmovilización de la propiedad) */
+    box-shadow: 0 2px 8px rgb(44, 44, 44); /* (eje x, eje y, ancho de sombra y color) */
+    z-index: 100; /* (eje z o capas de profundidad y sobreposición) */
+    display: table; /* (Quiero organizar el menú como una tabla) */
+}
+
+.nav{
+    padding-top: 15px;
+    height: 40px;
+    width: 850px;
+    margin: auto;
+}
+
+.itemMenu{
+    list-style: none;
+    float: left;
+    margin: 8px 5px;
+}
+
+.linkMenu{
+    display: table-cell;
+    border: 1px solid rgb(216, 165, 56);
+    padding: 10px 10px;
+    text-decoration: none;
+    border-radius: 5px; /* (esquinas redondeadas) */
+    color: rgb(236, 220, 220);
+    font-size: large;
+    text-align: right; 
+}
+
+.linkMenu:hover{
+    color: white;
+    background-color: rgb(184, 98, 0);
+}
+
+.headerLogo{
+    display: table-cell;
+    text-align: left;
+    vertical-align: middle;
+    margin: 0 0 10px 10px;
+}
+
+.imgLogo{
+    float: left;
+    height: 80px;
+    margin-bottom: 10px 10px 10px 0;
+    padding-left: 60px;
+}
+
+/* INICIO DEL MAIN */
+
+.main{
+    max-width: 1200px; /* (espacio máximo del contenido) */
+    width: 1100px;
+    margin: auto; /* (automáticamente justifica o centra el contenido) */
+    height: 2000px; /* (hay que asignar un alto para que no se mezcle con el footer) */
+}
+
+.section{
+    width: 60%; /* (de los 1200) */
+    float: left;
+}
+
+.title{
+    text-align: center;
+    margin: 150px 0 5px 0;
+   /*  padding-top: 10px; */
+    color: rgb(184, 98, 0);
+    font-size: 3.5rem; /* (1rem equivale a 16px) */
+    text-shadow: 1px 1px 10px black;
+}
+
+.imgLeft{
+    float: left;
+    margin: 8px 13px 8px 0;
+    /* width: 80%; */ /* (No me funcionó desde acá, tuve que hacerlo en el html) */
+    text-align: center;
+    font-size: smaller;
+}
+
+.imgFirst{
+    display: block;
+    float: left;
+    /* width: 40%; */ /* (recomendación usar porcentajes para el ajuste automático en su pantalla) */
+    margin: auto;
+}
+
+.imgRight{
+    float: right;
+    margin: 8px 13px 8px 0;
+    text-align: center;
+    font-size: smaller;
+}
+
+.imgSecond{
+    display: block;
+    float: right;
+    margin: auto;
+}
+
+.quote{
+    text-align: center;
+    font-size: xx-large;
+}
+
+.descripcion{
+    /* margin: 0 100px; */
+    /* margin-top: 40px; */
+    text-align: justify;
+}
+
+.aside{
+    width: 25%; /* (ancho de la barra lateral) */
+    float: right; /* (alineación de la caja) */
+    margin-top: 150px;
+    background-color: rgb(246, 228, 190);
+    border-radius: 15px;
+    padding: 20px 10px 8px 10px; /* (margen de la barra lateral) */
+    box-shadow: 0 2px 10px #6b3737;
+    position: sticky; /* (se queda pegada a la pantalla) */
+    top: 90px; /* (cuando esté a 90px se pegue a la pantalla) */
+    right: 30px;
+    margin-bottom: 40px; /* (se detenga a 40px del final) */
+}
+
+.imgAlbums:hover{
+    box-shadow: 0 0 8px black;
+    transform: scale(1.5); 
+    transition: all 0.3s ease-in-out; 
+}
+
+.imgAlbums{
+    width: 100%; /* (ocupa su porcentaje del aside) */
+    margin-bottom: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.albumSmall{
+    display: block;
+    margin-bottom: 2px;
+    text-align: center;
+    vertical-align: text-top;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.subtittleOne{
+    text-align: center;
+    margin: 0px 0 15px 0;
+   /*  padding-top: 10px; */
+    color: rgb(184, 98, 0);
+    text-shadow: 1px 1px 10px rgb(116, 112, 112);
+}
+
+
+/* INICIO DEL FOOTER */
+
+.footer{
+    background-color: rgb(180, 139, 49);
+    padding: 20px 0 50px;
+    height: 110px;
+    box-shadow: 0 2px 8px rgb(44, 44, 44)
+}
+
+.contactDesarrollador{
+    text-align: center;
+}
+
+.contactDesarrollador a{
+    /* text-decoration: none; */
+    color: black;
+}
+
+.contactDesarrollador a:hover{
+    color: blanchedalmond;
+}
+
+.contactDesarrollador a:visited{
+    color: blanchedalmond;
+}
+
+
+/* INICIO SEGUNDA PÁGINA */ /* [NO ME FUNCIONÓ, TUVE QUE CREAR OTRO CSS LLAMADO estilosGal] */
+
+/* MAIN */
+
+.subtittleTwo{
+    text-align: center;
+    margin: 150px 0 5px 0;
+    color: rgb(184, 98, 0);
+    text-shadow: 1px 1px 10px rgb(116, 112, 112);
+    font-size: 3.5rem;
+}
+
+.table{
+    border: 1px solid rgb(138, 101, 22);
+    border-collapse: collapse; /* (Unifica bordes) */
+    width: 110%;
+}
+
+.table td{
+    border: 1px solid rgb(138, 101, 22);
+    padding: 10px;
+    text-align: center;
+}
+
+.table td:hover{
+    background-color: rgb(180, 139, 49);
+    /* background-image: url(mjlogheader.png); */
+    /* transform: rotate(0deg) scaleX(1.03) */
+    /* background: url(mjlogheader.png) no-repeat; */
+   /*  transform: rotate3d(100px); */
+}
+
+.imgGal{
+    width: 100%
+}

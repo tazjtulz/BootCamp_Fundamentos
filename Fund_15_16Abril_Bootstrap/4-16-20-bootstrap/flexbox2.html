@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="estilos.css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+        <style>
+            .contenedor {
+                margin-bottom: 20px;
+                background: #e8e8e8;
+                color: #fff;
+                height: 200px;
+            }
+
+            .contenedor div {
+                background: #4f5ef5;
+                padding: 20px;
+                border: 1px solid rgba(255, 255, 255, .25);
+            }
+        </style>
+        <title>bootstrap 4</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row my-4 d-flex justify-content-between">
+                <div class="col">
+                    <h4>Align Items</h4>
+                    <hr>
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-3">
+                            <p>.align-items-start</p>
+                            <div class="contenedor d-inline-flex align-items-start">
+                                <div>caja1</div>
+                                <div class="align-self-center">caja2</div>
+                                <div class="align-self-end">caja3</div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <p>.align-items-center</p>
+                            <div class="contenedor d-inline-flex align-items-center">
+                                <div>caja1</div>
+                                <div>caja2</div>
+                                <div class="align-self-stretch">caja3</div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <p>.align-items-end</p>
+                            <div class="contenedor d-inline-flex align-items-end">
+                                <div>caja1</div>
+                                <div>caja2</div>
+                                <div>caja3</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <p>.align-items-start</p>
+                        <div class="contenedor d-flex align-items-stretch justify-content-center">
+                            <div>caja1</div>
+                            <div>caja2</div>
+                            <div>caja3</div>
+                        </div>
+                    </div>
+                    <div class="row my-4">
+                        <div class="col">
+                            <h4>Auto Margins</h4>
+                            <hr>
+                            <div class="contenedor d-flex justify-content-end">
+                                <div class="mr-auto">.mr-auto</div>
+                                <div>Caja2</div>
+                                <div>Caja3</div>
+                            </div>
+                            <div class="contenedor d-flex justify-content-start">
+                                <div>Caja1</div>
+                                <div>Caja2</div>
+                                <div class="ml-auto">.ml-auto</div>
+                            </div>
+                            <div class="contenedor d-flex flex-column align-items-start" style="height: 250px;">
+                                <div class="mb-auto">.mb-auto</div>
+                                <div>Caja2</div>
+                                <div>Caja3</div>
+                            </div>
+                            <div class="contenedor d-flex flex-column align-items-end" style="height: 250px;">
+                                <div>Caja1</div>
+                                <div>Caja2</div>
+                                <div class="mt-auto">.mt-auto</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js""
+		></script>
+		<script
+			src=" https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"> </script> <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,47 @@
+body{
+    background-color: rgb(220, 245, 220);
+}
+
+/* el uso de FLOAT en el LI alínea el contenido del menú según la instrucción entregada; si se usa en el UL entonces alínea el conjunto entero de menú según se indique */
+
+ul{
+    float: right;
+}
+
+li{
+    list-style: none;
+    float: left;
+    background-color: lightsalmon;
+    padding: 10px; /* si se quiere especificar cada lado, se hace en sentido de las agujas del reloj */
+    border: magenta 2px solid;
+    margin: 10px;
+    border-radius: 10px; /* estilo redondeado del menú */
+}
+
+li:hover{
+    background-color: violet; /* (cambio de color al acercar el puntero) */
+    
+    box-shadow: 1px 1px 8px black;
+}
+
+a{
+    text-decoration: none;
+    color: grey;
+}
+
+.BotonUno{
+    background-color: hotpink;
+    border-radius: 0;
+}
+
+.LinkUno:visited{
+color: red;
+}
+
+.LinkDos:visited{
+color: orangered;
+}
+
+.header{background-color: palegoldenrod;}
+.main{background-color: orchid;}
+.footer{background-color: palevioletred;}

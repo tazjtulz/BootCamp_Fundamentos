@@ -1,0 +1,10 @@
+BOOTSTRAP
+Es un FrameWork
+
+Diseña automáticamente respetando la regla de prototipado de 12 columnas:
+
+solo acepta números enteros
+
+<container>
+	<row>
+		<col-#>

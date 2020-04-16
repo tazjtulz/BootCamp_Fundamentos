@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="shortcut icon" type="image/png" href="Favicon.png">
+    <title>BicArt | Ubicación</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <img src="Logo_SF.png" alt="logo" class="logo">
+            <div class="hamburger">
+                <label for="hamburger" class="contHamburgerMenu">
+                    <div class="picHambFlex"><img src="MenuIcon.png" alt="Icono desplegable" class="picMenu"></div><!-- debo agregar contenedor al ícono para poder desligarlo del flex -->
+                </label>
+                <input type="checkbox" id="hamburger" class="hamburgerCheck">
+                <ul class="contMenu">
+                    <li class="itemMenu"><a href="index.html" class="linkMenu">inicio</a></li>
+                    <li class="itemMenu"><a href="galeria.html" class="linkMenu">nuestra galería</a></li>
+                    <li class="itemMenu"><a href="exempla.html" class="linkMenu">exempla artium</a></li>
+                    <li class="itemMenu"><a href="contacto.html" class="linkMenu">contacto</a>
+                        <ul class="contSubMenu">
+                            <li class="itemMenu itemSubMenu"><a href="horarios.html" class="linkSubMenu">horarios & tarifas</a></li>
+                            <li class="itemMenu itemSubMenu"><a href="inscripciones.html" class="linkSubMenu">inscripciones</a></li>
+                            <li class="itemMenu itemSubMenu"><a href="ubicacion.html" class="linkSubMenu">cómo llegar</a></li>
+                            <!-- <li class="itemMenu itemSubMenu"><a href="formcontacto.html" class="linkSubMenu">contáctenos</a></li> CREO QUE ME SOBRA ESTE-->
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="sectionInicio"><!-- No la cambié porque es la misma configuración de la anterior -->
+            <h1 class="tittle">Ubicación</h1>
+            <br>
+            <p class="parrDestacado"><!-- No se me ocurrió ningún texto --></p><br><br>
+            
+
+            <div class="ubicacionGps">
+                
+                <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15907.519859881228!2d-74.068287!3d4.6154924!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3bab23efae829923!2sMuseo%20Nacional%20de%20Colombia!5e0!3m2!1ses-419!2sco!4v1586757171063!5m2!1ses-419!2sco" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+            
+
+                <div class="contUbicacion">
+                    <div class="visitNal">
+                        <h3>¿Cómo llegar?</b></h3>
+                    </div>
+                    
+                <div class="contDescuentos">
+                    <p>El Museo Bic-Art está ubicado en la Carrera 7 # 32 – 50, en la zona Centro Internacional de Bogotá. La Casa del Encuentro, sede alterna de la institución, está localizada en el mismo sector, en un edificio contiguo al Museo.</p><br>
+                    <p>Usted tiene las siguientes alternativas para llegar:</p><br><br>
+
+                    <p><b>En Transmilenio:</b>  Troncal Museo Nacional, estación con el mismo nombre.</p><br>
+                    <p><b>En Vehículo Particular:</b>   Las personas que hagan su visita en vehículos particulares podrán llegar a través de la calle 34, sobre la cual está ubicado el parqueadero, y que tiene conexión directa con la entrada trasera del Museo.</p>
+                </div>
+            </div>
+       
+        </section>
+        
+        
+    </main>
+
+    <footer class="footer" id="footer">
+        <div class="contFooter">
+            <img src="Logo_SF.png" alt="BicArt Logo" class="logoFooter"> 
+        </div>
+        <div class="contFooter contFooterText">
+            <p class="contactDesarrollador">© 2020 Diseñado por <b>July Tatiana Carranza Jiménez</b>.</p>
+            <p class="contactDesarrollador"><a href="#">Términos y Condiciones</a> || <a href="#">Políticas de Privacidad</a></p>
+            <p class="contactDesarrollador"><a href="mailto:tazjtulz@gmail.com">Envíanos tus comentarios</a> || <a href="tel:3506937804">Llámanos</a></p>
+            <p class="contactDesarrollador">Todos los derechos reservados</p>
+        </div> 
+        <div class="contFooter contFooterFollow">
+            <h3>Síguenos</h3>
+            <!-- Pongo links a mis redes sociales para comprobar funcionalidad -->
+            <div class="contFooterIco">
+                <div><a href="https://www.facebook.com/tazjtulz" target="blank">
+                    <img src="IcoFace.png" alt="Facebook" class="icoFooter"/></a></div>
+                <div><a href="https://www.instagram.com/tazjtulz/" target="blank">
+                    <img src="IcoInsta.png" alt="Instagram" class="icoFooter"/></a></div>
+                <div><a href="https://twitter.com/tazjtulz" target="blank">
+                    <img src="IcoTw.png" alt="Twitter" class="icoFooter"/></a></div>
+                <div><a href="https://www.youtube.com/user/tazjtulz" target="blank">
+                    <img src="IcoYt.png" alt="YouTube" class="icoFooter"/></a></div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

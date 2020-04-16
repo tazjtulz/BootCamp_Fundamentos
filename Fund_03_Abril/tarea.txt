@@ -1,0 +1,45 @@
+Página BictiaArt
+
+Menú
+    Home
+    Nosotros
+    Eventos
+    Contactos
+
+Slider
+
+Título: BictiaArt
+
+Texto: Artista destacado con la foto
+
+Versión Escritorio: una al lado de la otra
+Versión Responsive: foto arriba y texto abajo
+
+
+Texto secundario
+
+Foto y artista simulando que estos son las exposiciones del museo
+
+Footer
+Dirección
+Teléfono
+Correo
+
+Página 2: sobre Nosotros
+
+Texto simulado explicando quiénes son
+Galería hecha en flexbox con mínimo 12 imágenes
+
+Página 3: Eventos
+
+(Mínimo 3 eventos)
+Imagen con subtítulo del nombre del evento
+Descripción de la obra de arte 
+con botón que diga Inscribirse el cual llevará a la página de contacto.
+
+Página 4: Contacto
+Nombre
+Apellido
+Teléfono
+Correo
+Evento de interés

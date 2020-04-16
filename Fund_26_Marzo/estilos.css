@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* (el contenido no se expande sino que se empuja hacia adentro) */
+}
+
+body{
+    font-family: 'roboto', sans-serif;
+    background-color: rgb(255, 245, 231);
+    /* Agregar imagen de fondo */
+    /* background-image: url(Flecha.png);
+    background-repeat: no-repeat;
+    background-size: auto; */
+}
+
+/* INICIO DEL MENÚ */
+.header{
+    background-color: rgb(255, 232, 168);
+    height: 60px;
+    position: fixed; /* (inmovilización de la propiedad) */
+    width: 100%;
+    box-shadow: 0 2px 8px rgb(44, 44, 44); /* (eje x, eje y, ancho de sombra y color) */
+    z-index: 100; /* (eje z o capas de profundidad y sobreposición) */
+}
+
+.nav{
+    padding-top: 20px;
+    height: 40px;
+    width: 500px;
+    margin: auto;
+}
+
+.itemMenu{
+    list-style: none;
+    float: left;
+    margin: 0 20px;
+    }
+
+.linkMenu{
+    display: block;
+    border: 1px solid blue;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: rgb(184, 98, 0);
+}
+
+.linkMenu:hover{
+    color: white;
+    background-color: rgb(184, 98, 0);
+}
+
+
+/* INICIO DEL MAIN */
+
+.main{
+    max-width: 1200px; /* (espacio máximo del contenido) */
+    width: 1200px;
+    margin: auto; /* (automáticamente justifica o centra el contenido) */
+    height: 2000px; /* (hay que asignar un alto para que no se mezcle con el footer) */
+}
+
+.section{
+    width: 60%;
+    float: left;
+}
+
+.title{
+    text-align: center;
+    margin: 80px 0 40px 0;
+    color: rgb(148, 79, 0);
+    font-size: 3rem; /* (1rem equivale a 16px) */
+}
+
+.imgDesarrollador{
+    display: block;
+    width: 70%; /* (recomendación usar porcentajes para el ajuste automático en su pantalla) */
+    margin: auto;
+/*     margin-bottom: 40px; */
+}
+
+.descripcion{
+    margin: 0 100px;
+    margin-top: 40px;
+    text-align: justify;
+}
+
+.aside{
+    width: 25%; /* (ancho de la barra lateral) */
+    float: right; /* (alineación de la caja) */
+    margin-top: 200px;
+    background-color: #e04002;
+    border-radius: 20px;
+    padding: 70px 20px;
+    box-shadow: 0 2px 10px #6b3737;
+    position: sticky; /* (se queda pegada a la pantalla) */
+    top: 90px; /* (cuando esté a 90px se pegue a la pantalla) */
+    right: 50px;
+    margin-bottom: 40px; /* (se detenga a 40px del final) */
+}
+
+.imgPublicidad:hover{
+    box-shadow: 0 0 8px black;
+    transform: scale(1.5); /* (Cacharrear para la tarea) */
+    transition: all 0.3s ease-in-out; /* (despacio, rápido y despacio) */
+}
+
+.imgPublicidad{
+    width: 100%; /* (ocupa su porcentaje del aside) */
+    margin-bottom: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.firstSmall{
+    display: block;
+    margin-bottom: 50px;
+    text-align: justify;
+}
+
+.table{
+    margin: 30px auto;
+    border: 1px solid rgb(138, 101, 22);
+    border-collapse: collapse; /* (Unifica bordes) */
+    width: 75%;
+}
+
+.table th, .table td{
+    border: 1px solid rgb(138, 101, 22);
+    padding: 10px;
+    text-align: center;
+}
+
+.boldLetter{
+    font-weight: bold;
+}
+.table tr:hover{
+    background-color: #ff8772;
+}
+
+
+/* INICIO DEL FOOTER */
+
+.footer{
+    background-color: rgb(131, 100, 72);
+    padding: 20px 0 50px;
+    height: 150px;
+}
+
+.contColsFooter{
+    width: 600px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.contactTitle{
+    text-align: center;
+    color: wheat;
+    font-size: 1.5rem;
+}
+
+.colsFooter{
+    width: 50%; /* (de los 600px) */
+    float: left;
+    margin-top: 20px;
+}
+
+.colsFooter a {
+    display: block;
+    margin-top: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.colsFooter a, .colsFooter p{
+    color: white;
+    text-align: center;
+}
+
+.colsFooter a:hover{
+    color: tomato;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="shortcut icon" type="image/png" href="Favicon.png">
+    <title>BicArt | Contacto</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <img src="Logo_SF.png" alt="logo" class="logo">
+            <div class="hamburger">
+                <label for="hamburger" class="contHamburgerMenu">
+                    <div class="picHambFlex"><img src="MenuIcon.png" alt="Icono desplegable" class="picMenu"></div><!-- debo agregar contenedor al ícono para poder desligarlo del flex -->
+                </label>
+                <input type="checkbox" id="hamburger" class="hamburgerCheck">
+                <ul class="contMenu">
+                    <li class="itemMenu"><a href="index.html" class="linkMenu">inicio</a></li>
+                    <li class="itemMenu"><a href="galeria.html" class="linkMenu">nuestra galería</a></li>
+                    <li class="itemMenu"><a href="exempla.html" class="linkMenu">exempla artium</a></li>
+                    <li class="itemMenu"><a href="contacto.html" class="linkMenu">contacto</a>
+                        <ul class="contSubMenu">
+                            <li class="itemMenu itemSubMenu"><a href="horarios.html" class="linkSubMenu">horarios & tarifas</a></li>
+                            <li class="itemMenu itemSubMenu"><a href="inscripciones.html" class="linkSubMenu">inscripciones</a></li>
+                            <li class="itemMenu itemSubMenu"><a href="ubicacion.html" class="linkSubMenu">cómo llegar</a></li>
+                            <!-- <li class="itemMenu itemSubMenu"><a href="formcontacto.html" class="linkSubMenu">contáctenos</a></li> CREO QUE ME SOBRA ESTE-->
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="sectionInicio"><!-- No la cambié porque es la misma configuración de la anterior -->
+            <h1 class="tittle">Contáctenos</h1>
+            <br>
+            <p class="parrDestacado">¡Hola, estamos ansiosos de atenderte!</p><br>
+            
+
+
+            <div class="contForm"><!-- formulario -->
+                <form>
+                    <div class="contInput">
+                        <label for="name">Nombres</label>
+                        <input type="text" id="name" maxlength="30" required/></div>
+                        <!-- maxlength (número máximo de caracteres) - required (obligación llenarlo) - placeholder (guía en el recuadro) -->
+
+                    <div class="contInput">
+                        <label for="name">Apellidos</label>
+                        <input type="text" id="name" maxlength="30"/></div>
+
+                    <div class="contInput">
+                        <label for="mail">Correo</label>
+                        <input type="email" id="mail" required/></div>
+
+                    <div class="contInput">
+                        <label for="tel">Teléfono</label>
+                        <input type="tel" id="tel" placeholder="Ej: +57 123 123 1234"/></div>
+                    
+                    <div class="contInput">
+                        <label for="program">Motivo de tu contacto</label>
+                        <!-- listas desplegables... para hacer listas dependientes es con javascript -->
+                    
+                    <select id="program" required>
+                            <option value="value1">Felicitación</option>
+                            <option value="value2">PQR</option>
+                            <option value="value3">Locaciones</option>
+                    </select></div>
+                    <!-- solo puede seleccionar una opción (radio), el name indica que todos los botones son excluyentes entre sí-->
+                    
+                    <div class="contInput">
+                        <label for="date">Mensaje</label>
+                        <textarea id="msg" cols ="40" rows="5"></textarea></div>
+                    <div class="contInput contTyC">
+                        <label for="TyC">Acepto términos y condiciones*</label>
+                        <input type="checkbox" id="TyC" required/></div>            
+                    <div class="contInput contBtn">
+                        <button type="submit">Enviar</button>
+                        </div>
+                </form>
+
+        
+        </section>
+        
+        
+    </main>
+
+    <footer class="footer" id="footer">
+        <div class="contFooter">
+            <img src="Logo_SF.png" alt="BicArt Logo" class="logoFooter"> 
+        </div>
+        <div class="contFooter contFooterText">
+            <p class="contactDesarrollador">© 2020 Diseñado por <b>July Tatiana Carranza Jiménez</b>.</p>
+            <p class="contactDesarrollador"><a href="#">Términos y Condiciones</a> || <a href="#">Políticas de Privacidad</a></p>
+            <p class="contactDesarrollador"><a href="mailto:tazjtulz@gmail.com">Envíanos tus comentarios</a> || <a href="tel:3506937804">Llámanos</a></p>
+            <p class="contactDesarrollador">Todos los derechos reservados</p>
+        </div> 
+        <div class="contFooter contFooterFollow">
+            <h3>Síguenos</h3>
+            <!-- Pongo links a mis redes sociales para comprobar funcionalidad -->
+            <div class="contFooterIco">
+                <div><a href="https://www.facebook.com/tazjtulz" target="blank">
+                    <img src="IcoFace.png" alt="Facebook" class="icoFooter"/></a></div>
+                <div><a href="https://www.instagram.com/tazjtulz/" target="blank">
+                    <img src="IcoInsta.png" alt="Instagram" class="icoFooter"/></a></div>
+                <div><a href="https://twitter.com/tazjtulz" target="blank">
+                    <img src="IcoTw.png" alt="Twitter" class="icoFooter"/></a></div>
+                <div><a href="https://www.youtube.com/user/tazjtulz" target="blank">
+                    <img src="IcoYt.png" alt="YouTube" class="icoFooter"/></a></div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

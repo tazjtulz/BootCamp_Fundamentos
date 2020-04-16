@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"
+    <title>Input y slider</title>
+</head>
+<body>
+    <main class="main">
+        <div class="slider"></div>
+        <div class="contForm"><!-- formulario -->
+            <form>
+                <div class="contInput">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" maxlength="30" required/></div>
+                    <!-- maxlength (número máximo de caracteres) - required (obligación llenarlo) - placeholder (guía en el recuadro) -->
+                <div class="contInput">
+                    <label for="mail">Correo</label>
+                    <input type="email" id="mail"/></div>
+                <div class="contInput">
+                    <label for="tel">Teléfono</label>
+                    <input type="tel" id="tel" placeholder="Ej: +57 123 123 1234"/></div>
+                <div class="contInput">
+                    <label for="ic">Documento de Identidad</label>
+                    <input type="number" id="ic"/></div>
+                <div class="contInput">
+                    <label for="date">Fecha de nacimiento</label>
+                    <input type="date" id="date"/></div>
+                <div class="contInput">
+                    <label for="program">Selecciona un programa</label>
+                    <!-- listas desplegables... para hacer listas dependientes es con javascript -->
+                    <select id="program" required>
+                        <option value="value1">Programa 1</option>
+                        <option value="value2">Programa 2</option>
+                        <option value="value3">Programa 3</option>
+                    </select></div>
+                <!-- solo puede seleccionar una opción (radio), el name indica que todos los botones son excluyentes entre sí-->
+                <div class="contInput inputGender">
+                    <label for="program">Género</label>
+                    <br/>
+                    <label>
+                        <input type="radio" name="gender" value="mujer"/>Mujer
+                    </label>
+                    <br/>
+                    <label>
+                        <input type="radio" name="gender" value="hombre"/>Hombre
+                    </label>
+                    <br/>
+                    <label>
+                        <input type="radio" name="gender" value="otro"/>Otro
+                    </label>
+                </div>
+                <div class="contInput">
+                    <label for="date">Mensaje</label>
+                    <textarea id="msg" cols ="40" rows="5"></textarea></div>
+            <div class="contInput contTyC">
+                    <label for="TyC">Acepto términos y condiciones*</label>
+                    <input type="checkbox" id="TyC" required/></div>            
+                <div class="contInput contBtn">
+                    <button type="submit">Enviar</button>
+                    </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

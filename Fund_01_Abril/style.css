@@ -1,0 +1,88 @@
+/* SLIDE */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contForm{
+    width: 60%;
+    margin: 50px auto 0;
+}
+
+.contInput {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;/* separar entre ellos */
+}
+
+/* llamar a los elementos que contiene la clase= se inicia cada clase con un punto y después de un espacio se llama el elemento que contiene esa clase. - se separa por una coma cada elemento de clase */
+.contInput input,
+.contInput select,
+.contInput textarea{
+    padding: 10px;/* distancia desde el borde */
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(235, 235, 235);
+    font-size: 14px;
+    color: royalblue;/* color de la fuente */
+}
+
+.contInput input::placeholder{
+    color: rgb(175, 175, 175);
+}
+
+/* el cursor pasa por encima del item*/
+.contInput input:hover,
+.contInput textarea:hover,
+.contInput select:hover{
+    background-color: rgb(255, 191, 191);
+}
+
+/* el puntero se queda en el item */
+.contInput input:focus,
+.contInput textarea:focus,
+.contInput select:focus{
+    background-color: rgb(241, 241, 241);
+    box-shadow: 0 0 4px rgb(63, 63, 63);
+    transition: all .3s ease-in-out;
+}
+
+.contInput textarea {
+    resize: vertical;
+    max-height: 500px;
+}
+
+.contBtn{
+    justify-content: center;
+    align-items: center;
+}
+
+.contBtn button{
+    padding: 10px 20px;
+    background-color: brown;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-size: 14px;
+    transition: all .4s ease-in-out;
+}
+
+.contBtn button:hover{
+    transform: scale(1.5);
+    transition: all .4s ease-in-out;
+}
+
+.contTyC{
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+.contTyC input{
+    margin-right: 2px;
+}

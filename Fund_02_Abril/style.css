@@ -1,0 +1,138 @@
+/* SELECTORES AVANZADOS */
+/* Selector global [*] */
+/* Selector por Tipo o Etiqueta [body, header, div, li] */
+/* Selector por Clase [.clase]*/
+/* Selector por ID [#id]*/
+
+/* Para llamar a un hijo directo se hace mediante un signo '>' */
+/* Ejemplo: main>div */
+
+/* .main>section>div:nth-child(número de hijo al que quiero que aplique el diseño)
++ --- llama al hermano directo
+> --- llama al hijo directo (todos) th si quiero especificar el número del hijo
+~ --- llama a hermanos de ahí para abajo*/
+
+/* dos propiedades con mismo estilo: se separan de una coma: ej- etiqueta, etiqueta */
+/* :not(x) */
+
+/* RESPONSIVE */
+
+/* ASIGNAR PROPIEDADES DIFERENTES HASTA UN TAMAÑO ESPECÍFICO */
+/* @media screen and (max-width 768px){} */
+/* Se suelen hacer a 4 queries 
+ - Mayor a 1024 (Escritorio)
+ - 1024 (Portátiles)
+ - 768 (Ipad)
+ - 500 (Celulares) a criterio*/
+
+ /* Mobile First Design */
+
+/* ASIGNAR PROPIEDADES DIFERENTES A PARTIR DE UN TAMAÑO ESPECÍFICO */
+/* @media screen and (min-width:1024px){} */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(205, 218, 213);
+}
+
+.main{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.title{
+    color: rgb(22, 12, 68);
+    text-align: center;
+    margin: 30px auto;
+    font-size: xx-large;
+}
+
+.contImgTxt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img, .txt{
+    width: 45%;
+}
+
+/* Preguntar por qué .img img */
+img{
+    width: 100%;
+}
+
+.txt{
+    display: flex;
+    background-color: cadetblue;
+    border-radius: 20px;
+    /* align-items: center; */
+    padding: 20px;
+}
+
+.txt p{
+    font-size: 20px;
+    line-height: 25px; /* Interlineado */
+    text-align: justify;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-color: darkgoldenrod;
+    /* justify-content: center; */
+    padding: 20px;
+    /* align-content: center; */
+    margin: 50px 10px;
+}
+
+.footer p{
+    text-align: center;
+}
+
+
+
+@media screen and (max-width: 768px){
+    .main{
+        margin: auto 15px;
+    }
+    
+    .title{
+        color: darkmagenta;
+    }
+
+    .txt{
+        background-color: forestgreen;
+    }
+
+    .footer{
+        background-color: lightgreen;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .title{
+        color:rgb(255, 123, 0);
+        font-size: 3rem;
+    }
+
+    .img, .txt{
+        width: 48%;
+    }
+
+    .txt{
+        background-color: plum;
+    }
+
+    .footer{
+        background-color: lightgreen;
+        flex-direction: column-reverse;
+    }
+
+}

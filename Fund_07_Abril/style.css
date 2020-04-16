@@ -1,0 +1,119 @@
+/* MENU RESPONSIVE */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav{
+    box-shadow: 0 2px 8px #333;
+    display: flex;
+    align-items: center;
+}
+
+.hamburger{
+    width: 90%;
+}
+
+.picMenu{
+    width: 32px;
+    cursor: pointer;/* cambia el estilo del puntero al pasar por encima */
+}
+
+.contHamburgerMenu, .hamburgerCheck{
+    display: none;/* Oculta los elementos */
+}
+
+.contMenu{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 10px;
+}
+
+.itemMenu{
+    list-style: none;
+    margin: 0 30px;
+    border-right: 1px solid #dbdbdb;/* borde de la lista del menu */
+}
+
+.linkMenu{
+    text-decoration: none;
+    display: block;
+    padding: 15px 10px;
+    color: #333;
+}
+
+.logo{
+    width: 100px;
+}
+
+/* lo que necesitas para la galería */
+.prueba{
+    margin: 50px auto;
+    background-image: url(logo.png);
+    width: 100px;
+    height: 100px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+
+.prueba:hover::before{
+    content: "Hola";
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+.prueba:hover{
+    transition: all 1s ease-in-out;
+    background-image: url(logo.png);
+}
+
+footer{
+    background-color: aqua;
+    height: 200px;
+}
+
+@media screen and (max-width:768px){
+    .contHamburgerMenu{
+        display: block;
+        padding: 10px 0;
+    }
+
+    .contMenu{
+        flex-direction: column;
+        box-shadow: 0 2px 4px gray;
+        transform: translateX(-110%);/* desplaza el elemento por el eje x según la medida indicada (negativos hacia la izquierda y hacia arriba) */
+        transition: all .3s ease-in-out;/* para desplazar el menu suavemente */
+    }
+
+    .hamburgerCheck:checked+ .contMenu{
+        transform: translateX(0);
+    }
+
+    .itemMenu{
+        border-right: none;
+        border-bottom: 1px solid #dbdbdb;
+    }
+
+    .picMenu{
+        margin-left: 40px;
+    }
+
+    .nav{
+        box-shadow: none;
+        align-items: flex-start;/* los elementos se alinean */
+    }
+
+    .logo{
+        order: 2;
+        margin-right: 40px;
+    }
+}

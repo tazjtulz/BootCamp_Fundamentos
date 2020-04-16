@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="shortcut icon" type="image/png" href="Favicon.png">
+    <title>BicArt | La Galería</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <img src="Logo_SF.png" alt="logo" class="logo">
+            <div class="hamburger">
+                <label for="hamburger" class="contHamburgerMenu">
+                    <div class="picHambFlex"><img src="MenuIcon.png" alt="Icono desplegable" class="picMenu"></div><!-- debo agregar contenedor al ícono para poder desligarlo del flex -->
+                </label>
+                <input type="checkbox" id="hamburger" class="hamburgerCheck">
+                <ul class="contMenu">
+                    <li class="itemMenu"><a href="index.html" class="linkMenu">inicio</a></li>
+                    <li class="itemMenu"><a href="galeria.html" class="linkMenu">nuestra galería</a></li>
+                    <li class="itemMenu"><a href="exempla.html" class="linkMenu">exempla artium</a></li>
+                    <li class="itemMenu"><a href="contacto.html" class="linkMenu">contacto</a>
+                        <ul class="contSubMenu">
+                            <li class="itemMenu itemSubMenu"><a href="horarios.html" class="linkSubMenu">horarios & tarifas</a></li>
+                            <li class="itemMenu itemSubMenu"><a href="inscripciones.html" class="linkSubMenu">inscripciones</a></li>
+                            <li class="itemMenu itemSubMenu"><a href="ubicacion.html" class="linkSubMenu">cómo llegar</a></li>
+                            <!-- <li class="itemMenu itemSubMenu"><a href="formcontacto.html" class="linkSubMenu">contáctenos</a></li> CREO QUE ME SOBRA ESTE-->
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="sectionInicio"><!-- No la cambié porque es la misma configuración de la anterior -->
+            <h1 class="tittle">Nuestra Galería</h1>
+            
+            <h2 class="subTittle1">Una breve reseña...</h2>
+            
+            <div class="contVidTxt">
+                <div class="vidCont1">
+                <video class= "contVideo" src="Multimedia/Wp_Slider_1.mp4" alt="presentación" controls width=""></video>
+                </div>
+                
+                <div class="txtCont1">
+                    <p>El Museo de arte BIC-ART fue fundado el 29 de noviembre de 1981 por el gobierno del entonces Estado Soberano de Colombia, con el nombre de Museo y Biblioteca de Zea, en honor al botánico, prócer y diplomático Francisco Antonio Zea, conocido por su participación en las gestas de independencia de principios del siglo XIX. El Museo fue la apuesta para la época por la educación y la cultura del país.</p>
+                    <br>
+                    <p>Desde sus primeros años, el Museo ofreció exposiciones permanentes a partir de las colecciones iniciales: reliquias históricas asociadas a personalidades y eventos de la independencia, documentos manuscritos oficiales, pinturas coloniales y elementos de historia natural.</p>
+                    <br>
+                    <p>La colección del Museo BIC.ART alberga más de 5.000 piezas, que dan cuenta del surgimiento, recorrido y transformación de la historia y las expresiones artísticas en el país. El Museo permanentemente revisa, divulga y amplía su colección, que incluye pinturas, dibujos, esculturas, documentos y piezas históricas, entre otros objetos.</p>
+                    <br>
+                    <p>Asimismo, el museo cuenta con espacios idóneos en donde desarrolla actividades de interés cultural, tales como, conversatorios, cine foros, muestras culturales, exposiciones de arte, entre otros.</p>
+                </div>
+            </div>
+        </section>
+        
+        <div class="sectionInicio">
+            <h2 class="subTittle3">Una breve muestra de nuestros artistas destacados de la temporada...</h2>
+            <!-- Pensaba poner un párrafo explicando las obras, pero me explotó la cabeza -->
+        </div>
+        <div class="contGallery">
+            <div><img src="Multimedia/Gal1_Spazuk.png" alt="Artista invitado Spazuk"/></div>
+            
+            <div><img src="Multimedia/Gal2_Spazuk.png" alt="Artista invitado Spazuk"/></div>
+            
+            <div><img src="Multimedia/Gal3_Spazuk.png" alt="Artista invitado Spazuk"/></div>
+            
+            <div><img src="Multimedia/Gal4_Spazuk.png" alt="Artista invitado Spazuk"/></div>
+            
+            <div><img src="Multimedia/Gal5_Spazuk.png" alt="Artista invitado Spazuk"/></div>
+            
+            <div><img src="Multimedia/Gal6_Spazuk.png" alt="Artista invitado Spazuk"/></div>
+            
+            <div><img src="Multimedia/Gal1_AnGil.JPG" alt="Artista invitado Aníbal Gil"/></div>
+            
+            <div><img src="Multimedia/Gal2_AnGil.JPG" alt="Artista invitado Aníbal Gil"/></div>
+            
+            <div><img src="Multimedia/Gal3_AnGil.JPG" alt="Artista invitado Aníbal Gil"/></div>
+            
+            <div><img src="Multimedia/Gal4_AnGil.JPG" alt="Artista invitado Aníbal Gil"/></div>
+            
+            <div><img src="Multimedia/Gal5_AnGil.JPG" alt="Artista invitado Aníbal Gil"/></div>
+            
+            <div><img src="Multimedia/Gal6_AnGil.JPG" alt="Artista invitado Aníbal Gil"/></div>
+        </div>
+    </main>
+
+    <footer class="footer" id="footer">
+        <div class="contFooter">
+            <img src="Logo_SF.png" alt="BicArt Logo" class="logoFooter"> 
+        </div>
+        <div class="contFooter contFooterText">
+            <p class="contactDesarrollador">© 2020 Diseñado por <b>July Tatiana Carranza Jiménez</b>.</p>
+            <p class="contactDesarrollador"><a href="#">Términos y Condiciones</a> || <a href="#">Políticas de Privacidad</a></p>
+            <p class="contactDesarrollador"><a href="mailto:tazjtulz@gmail.com">Envíanos tus comentarios</a> || <a href="tel:3506937804">Llámanos</a></p>
+            <p class="contactDesarrollador">Todos los derechos reservados</p>
+        </div> 
+        <div class="contFooter contFooterFollow">
+            <h3>Síguenos</h3>
+            <!-- Pongo links a mis redes sociales para comprobar funcionalidad -->
+            <div class="contFooterIco">
+                <div><a href="https://www.facebook.com/tazjtulz" target="blank">
+                    <img src="IcoFace.png" alt="Facebook" class="icoFooter"/></a></div>
+                <div><a href="https://www.instagram.com/tazjtulz/" target="blank">
+                    <img src="IcoInsta.png" alt="Instagram" class="icoFooter"/></a></div>
+                <div><a href="https://twitter.com/tazjtulz" target="blank">
+                    <img src="IcoTw.png" alt="Twitter" class="icoFooter"/></a></div>
+                <div><a href="https://www.youtube.com/user/tazjtulz" target="blank">
+                    <img src="IcoYt.png" alt="YouTube" class="icoFooter"/></a></div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
